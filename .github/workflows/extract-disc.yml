@@ -1,0 +1,28 @@
+name: Extract Disc Image
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  extract-disc:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install unrar
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y unrar
+
+      - name: Download Disc.rar
+        run: |
+          curl -L -o Disc.rar "https://ia601905.us.archive.org/view_archive.php?archive=/6/items/Fallen_Haven_Blue_Byte_Classics__Europe/Disc.rar"
+
+      - name: Extract to package/
+        run: |
+          mkdir -p package
+          unrar x -o+ Disc.rar package/
