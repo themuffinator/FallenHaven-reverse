@@ -1,0 +1,59 @@
+;Unit Type name
+;Facing BMP, without extension
+;Name of light weapon file or NO WEAPON
+;Name of heavy weapon file
+;Type of movement (GROUND, HOVER, FLYING) (case sensitive)
+;Cash to produce (0 - 1000)
+;Type of industry producing it (LIGHT, HEAVY, AIRCRAFT, SPACESHIP, MISSILE, PROBE)
+;Time Units
+;Initiative
+;Hit points
+;Upkeep cost
+;Unit Type Category Squad, Buggy, LtGrav, LtTank, Tank, HeavyGrav, LongRange, MegaTank, TowerGun, 
+;					Dropship, NuclearMissile
+;MoveSound (Troop, Wheeled, Tracked, Hovering, FlyingJets, FlyingChopper)
+
+
+[DropShip]
+PictureID=smship
+LightWeapon=NO WEAPON
+HeavyWeapon=NO WEAPON
+Movement=NOMOVE
+Cost=800
+ProductionType=DROPSHIP
+TimeUnits=5
+Initiative=50
+Hp=75
+Upkeep=0
+UnitCategory=Dropship
+MoveSound=Troop
+DestructionAnimation=nul
+
+[Nuclear Missile]
+; the PictureID for this must one that is already in the list, to save RAM. It will never be displayed
+PictureID=smship
+LightWeapon=WEAPON_MISWARHEAD
+HeavyWeapon=WEAPON_MISWARHEAD
+Movement=NOMOVE
+Cost=1000
+ProductionType=MISSILE
+TimeUnits=1
+Initiative=1
+Hp=1
+Upkeep=0
+UnitCategory=NuclearMissile
+; the MoveSound will never be used
+MoveSound=Troop
+DestructionAnimation=NUCLEAREXPLOSION
+
+[WEAPON_MISWARHEAD]
+Name=Nuclear Missile Warhead
+Type=0
+Display=ThMiss
+Turreted=0
+Range=1
+Precision=1
+DamageContact=1000
+DamageClose=1000
+DamageFar=25
+PercentTimeUnits=1
