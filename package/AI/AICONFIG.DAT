@@ -1,0 +1,112 @@
+[Attack]
+; AvgTurnNeighbourAttack: nombre de tours en moyennes entre chaque attaque par l'AI
+;NOTE - l'AI prend toujours au premier tour une province adjacente, idenpendamment de la valeur
+;mise dans la variable AvgTurnNeighbourAttack...
+;
+;avec l'effet random, la valeur se situera entre x+1 et x+AvgTurnRandomEffect
+
+AvgTurnNeighbourAttackEasy=2;
+AvgTurnNeighbourAttackNormal=2;
+AvgTurnNeighbourAttackHard=2;
+
+; AvgTurnRandomEffect: Effet random. 
+;                      AvgTurnOrbitalAttack & AvgTurnNeighbourAttack sont modifie + par ce facteur
+;                      la valeur ici DOIT etre plus grande que 0
+AvgTurnRandomEffect=2;
+
+[Orbital]
+; AvgTurnOrbitalAttack: nombre de tours en moyenne entre chaque attaque orbitale par l'AI
+AvgTurnOrbitalAttackEasy=4
+AvgTurnOrbitalAttackNormal=3
+AvgTurnOrbitalAttackHard=3
+
+; MinProvincesOrbital: Nombre minimum de provinces que le joueur doit avoir 
+;                      avant que l'AI ne fasse des attaques orbitales
+MinProvincesOrbitalEasy=4
+MinProvincesOrbitalNormal=2
+MinProvincesOrbitalHard=3
+
+[QtyDShips]
+; The proximity is for the province target of the attack versus the Computer
+; capital
+; The closer ( 'ProximityClose' ) the target is from the capital
+; the stronger ( # dropships ) the attacks will be
+ProximityClose=2
+ProximityFar=3
+
+; TimeMiddleGame is also for the quantity of dropships to send in an attack
+; if the Strategical Turn is bigger than 'TimeMiddleGame', 
+; one more dropship is sent
+; if the Strategical Turn is bigger than 'TimeFinishGame', 
+; another ( that makes 2 more ) dropship is sent
+TimeMiddleGame=75
+TimeFinishGame=100
+
+[DShipContent]
+; these are the years at which the dropships content change
+YearDShipStep2=16
+YearDShipStep3=31
+YearDShipStep4=46
+
+NumberOfTemplatePerStep=6
+
+[Nuke]
+; AvgTurnNuke: nombre de tours en moyenne entre chaque nuke par l'AI
+;              plus le randomizer
+AvgTurnNukeEasy=6
+AvgTurnNukeNormal=5
+AvgTurnNukeHard=5
+
+; percent of a nuke (if possible) before a neighbour attack
+PercentNukeBeforeAttackEasy=20
+PercentNukeBeforeAttackNormal=30
+PercentNukeBeforeAttackHard=40
+
+;Pour UnitCash, StructureCash, Research, on determine un facteur par lequel
+;on multiplie les donnees des fichiers .cm et les points de recherche que AI
+;possede et ce pour trois niveaux-- easy, normal, hard
+[CityDevelopment]
+UnitCashEasy=1
+UnitCashNormal=1
+UnitCashHard=1
+
+StructureCashEasy=1
+StructureCashNormal=1
+StructureCashHard=2
+
+[AITech]
+ResearchEasy=1
+ResearchNormal=1
+ResearchHard=2
+
+; distribution du % des recherches, different for Human & Alien
+[TechHuman]
+EnergyPercent=0
+ResistancePercent=15
+DamagePercent=15
+SpeedPercent=30
+RateOfirePercent=30
+RocketryPercent=10
+
+[TechAlien]
+EnergyPercent=0
+ResistancePercent=35
+DamagePercent=35
+SpeedPercent=10
+RateOfirePercent=10
+RocketryPercent=10
+
+[TechStartLevel]
+;Identifie le Tech level de depart de AI
+EnergyLevel=4
+ResistanceLevel=1
+DamageLevel=1
+SpeedLevel=1
+RateOfireLevel=1
+RocketryLevel=2
+
+[PlayerCash]
+; This is the amount of credits the human player starts with
+Easy=4000
+Normal=6000
+Hard=8000

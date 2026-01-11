@@ -1,0 +1,58 @@
+;Name
+;Hit points (> 0)
+;Cost
+;Size (x)
+;Size (y)
+;Picture ID
+;Is Starship (0 == No)
+;Built where ("NOWHERE", "B-ROAD", "B-WALL", "ANYWHERE")
+;Production type (0 == No prod)
+;Storage type
+;Cash production
+;Research production
+;Energy production
+;Cash consummation
+;Energy consummation
+;Storage size
+;Structure Category { "HQ", "FACTORY", "ENERGY", "LAB", "HOUSE", "AIRPORT", "STARPORT", 
+;                     "SHIELD", "MINING", "WALL", "FORCEFIELD", "TOWER", "SCANNER", 
+;					 "ROAD", "SHIP" };
+;Embedded unit type name (or NUL)
+
+[Road]
+Hp=1
+Cost=5
+SizeX=1
+SizeY=1
+PictureID=nul
+IsStarship=0
+BuiltWhere=B-ROAD
+ProductionType=0
+StorageType=0
+ProductionCash=0
+ProductionResearch=0
+ProductionEnergy=0
+ConsummationCash=0
+ConsummationEnergy=0
+StorageSize=0
+StructureCategory=ROAD
+EmbeddedUnitType=NUL
+
+[Wall]
+Hp=20
+Cost=10
+SizeX=1
+SizeY=1
+PictureID=nul
+IsStarship=0
+BuiltWhere=B-WALL
+ProductionType=0
+StorageType=0
+ProductionCash=0
+ProductionResearch=0
+ProductionEnergy=0
+ConsummationCash=0
+ConsummationEnergy=0
+StorageSize=0
+StructureCategory=WALL
+EmbeddedUnitType=NUL

@@ -1,0 +1,407 @@
+[S-FUSIONRIFLE]
+; number of frames, 4 is a good nb
+Frames=1
+; Number of repetition of a frame before passing to the next
+;	3 is a good number
+FrameRepeat=3
+;size of a frame
+FrameX=16
+FrameY=16
+; parabolic height of shot, 0 for straight
+Curb=0
+; speed of shot
+Speed=3
+; SmokeFrame is the number of smoke images to follow the shot
+; 	it can 0 if you don't want any smoke
+SmokeFrame=0
+; SmokeFrameMin is the number of the smallest frame of smoke to be displayed as trailing
+; 	previous frame are used for the fading effect
+SmokeFrameMin=0
+; speed of the smoke (applicable only if SmokeFrame > 0)
+SmokeSpeed=40
+; space for smoke
+SmokeSize=4
+; base filename of shot & smoke frames
+; the actual file will be named FileName(xy).ext
+; 	where FileName is 3 letters long, x is the facing, y is the frame, 
+; 	and ext is 'sht' for shot frames, 'smk' for smoke frames
+; 	those file must be in CImage (non-compressed) format
+; 	IMPORTANT: The images MUST be in the center of the file
+FileName=FUS
+; ContactAnim : section name of an animation
+; this animation will be played (RunModal) after the projectile has reached its
+; target
+; it will be centered on the target
+; this field is not obligatory
+ContactAnim=IMPACT
+; SoundStart : id of a sound to play at start of shooting
+SoundStart=18
+;	"shot01"
+;____________________________________________________________________________________
+
+[S-FUSIONCANNON]
+Frames=1
+FrameX=16
+FrameY=16
+FrameRepeat=3
+Curb=0
+Speed=3
+SmokeFrame=0
+SmokeFrameMin=0
+SmokeSpeed=40
+SmokeSize=4
+FileName=FUS
+ContactAnim=IMPACT
+SoundStart=18
+;	"shot01"
+
+;____________________________________________________________________________________
+
+[S-PLASMALAUNCHER]
+Frames=4
+FrameX=16
+FrameY=16
+FrameRepeat=6
+Curb=4
+Speed=3
+SmokeFrame=0
+SmokeFrameMin=0
+SmokeSpeed=40
+SmokeSize=4
+FileName=PLA
+ContactAnim=IMPACTARTILLERY
+SoundStart=19
+;	"shot02"
+
+;____________________________________________________________________________________
+
+[S-LPLASMALAUNCHER]
+Frames=4
+FrameX=16
+FrameY=16
+FrameRepeat=6
+Curb=3
+Speed=3
+SmokeFrame=0
+SmokeFrameMin=0
+SmokeSpeed=40
+SmokeSize=4
+FileName=PLA
+ContactAnim=IMPACT
+SoundStart=19
+;	"shot"
+
+;____________________________________________________________________________________
+
+[S-SHOCKBOLT]
+Frames=7
+FrameX=32
+FrameY=32
+FrameRepeat=6
+Curb=0
+Speed=3
+SmokeFrame=0
+SmokeFrameMin=0
+SmokeSpeed=40
+SmokeSize=4
+FileName=SBT
+ContactAnim=SHOCK
+SoundStart=20
+;	"shot03"
+
+;____________________________________________________________________________________
+
+[S-TMEGACANNON]
+Frames=4
+FrameX=40
+FrameY=40
+FrameRepeat=6
+Curb=0
+Speed=3
+SmokeFrame=0
+SmokeFrameMin=0
+SmokeSpeed=40
+SmokeSize=4
+FileName=MEG
+ContactAnim=IMPACTMEGA
+SoundStart=21
+;	"shot04"
+
+;____________________________________________________________________________________
+
+[S-DUALFUSIONCANNON]
+Frames=4
+FrameX=24
+FrameY=24
+FrameRepeat=3
+Curb=0
+Speed=3
+SmokeFrame=0
+SmokeFrameMin=0
+SmokeSpeed=40
+SmokeSize=4
+FileName=DUS
+ContactAnim=IMPACT2
+SoundStart=22
+;	"shot05"
+
+;____________________________________________________________________________________
+
+[S-HLIGHTLASER]
+Frames=1
+FrameX=16
+FrameY=16
+FrameRepeat=3
+Curb=0
+Speed=3
+SmokeFrame=0
+SmokeFrameMin=0
+SmokeSpeed=40
+SmokeSize=4
+FileName=MIN
+ContactAnim=IMPACT
+SoundStart=23
+;	"shot06"
+
+;_________________________________________________________________________________
+
+[S-HHEAVYLASER]
+Frames=3
+FrameX=16
+FrameY=16
+FrameRepeat=3
+Curb=0
+Speed=3
+SmokeFrame=0
+SmokeFrameMin=0
+SmokeSpeed=40
+SmokeSize=4
+FileName=LAS
+ContactAnim=IMPACT
+SoundStart=23
+;	"shot06"
+;___________________________________________________________________________________
+
+[S-HPULSELASER]
+Frames=4
+FrameX=24
+FrameY=24
+FrameRepeat=12
+Curb=0
+Speed=3
+SmokeFrame=0
+SmokeFrameMin=0
+SmokeSpeed=40
+SmokeSize=4
+FileName=PUL
+ContactAnim=IMPACT3
+SoundStart=24
+;	"shot07"
+;___________________________________________________________________________________
+
+[S-HTWINLASER]
+Frames=4
+FrameX=24
+FrameY=24
+FrameRepeat=12
+Curb=0
+Speed=3
+SmokeFrame=0
+SmokeFrameMin=0
+SmokeSpeed=40
+SmokeSize=4
+FileName=DUL
+ContactAnim=IMPACT2
+SoundStart=25
+;	"shot08"
+;___________________________________________________________________________________
+
+[S-HHEAVYTWINLASER]
+Frames=4
+FrameX=24
+FrameY=24
+FrameRepeat=12
+Curb=0
+Speed=3
+SmokeFrame=0
+SmokeFrameMin=0
+SmokeSpeed=40
+SmokeSize=4
+FileName=HTL
+ContactAnim=IMPACT
+SoundStart=25
+;	"shot08"
+;___________________________________________________________________________________
+
+[S-HNMISSILE]
+Frames=4
+FrameX=32
+FrameY=32
+FrameRepeat=3
+Curb=0
+Speed=3
+SmokeFrame=0
+SmokeFrameMin=0
+SmokeSpeed=40
+SmokeSize=4
+FileName=HRO
+ContactAnim=IMPACTMISSILE
+SoundStart=26
+;	"shot09"
+;___________________________________________________________________________________
+
+[S-HARTILLERY]
+Frames=4
+FrameX=16
+FrameY=16
+FrameRepeat=3
+Curb=4
+Speed=3
+SmokeFrame=0
+SmokeFrameMin=0
+SmokeSpeed=40
+SmokeSize=4
+FileName=HAR
+ContactAnim=IMPACTARTILLERY
+SoundStart=27
+;	"shot10"
+;___________________________________________________________________________________
+
+[S-HMORTAR]
+Frames=1
+FrameX=8
+FrameY=8
+FrameRepeat=3
+Curb=3
+Speed=3
+SmokeFrame=0
+SmokeFrameMin=0
+SmokeSpeed=40
+SmokeSize=4
+FileName=HMO
+ContactAnim=IMPACT
+SoundStart=28
+;	"shot11"
+;___________________________________________________________________________________
+
+[S-NLIGHTLASER]
+Frames=1
+FrameX=16
+FrameY=16
+FrameRepeat=3
+Curb=0
+Speed=3
+SmokeFrame=0
+SmokeFrameMin=0
+SmokeSpeed=40
+SmokeSize=4
+FileName=NIN
+ContactAnim=IMPACT
+SoundStart=23
+;	"shot06"
+;___________________________________________________________________________________
+
+[S-NHEAVYLASER]
+Frames=3
+FrameX=16
+FrameY=16
+FrameRepeat=3
+Curb=0
+Speed=3
+SmokeFrame=0
+SmokeFrameMin=0
+SmokeSpeed=40
+SmokeSize=4
+FileName=NLS
+ContactAnim=IMPACT
+SoundStart=23
+;	"shot06"
+;___________________________________________________________________________________
+
+[S-NTWINLASER]
+Frames=4
+FrameX=24
+FrameY=24
+FrameRepeat=12
+Curb=0
+Speed=3
+SmokeFrame=0
+SmokeFrameMin=0
+SmokeSpeed=40
+SmokeSize=4
+FileName=NUK
+ContactAnim=IMPACT2
+SoundStart=25
+;	"shot08"
+;___________________________________________________________________________________
+
+[S-NHEAVYTWINLASER]
+Frames=4
+FrameX=24
+FrameY=24
+FrameRepeat=12
+Curb=0
+Speed=3
+SmokeFrame=0
+SmokeFrameMin=0
+SmokeSpeed=40
+SmokeSize=4
+FileName=TLS
+ContactAnim=IMPACT2
+SoundStart=25
+;	"shot08"
+;___________________________________________________________________________________
+
+[S-HNLONGROCKET]
+Frames=4
+FrameX=40
+FrameY=40
+FrameRepeat=3
+Curb=0
+Speed=3
+SmokeFrame=0
+SmokeFrameMin=0
+SmokeSpeed=40
+SmokeSize=4
+FileName=NLR
+ContactAnim=IMPACTARTILLERY
+SoundStart=26
+;	"shot09"
+;______________________________________________________
+
+[S-HROCKET]
+Frames=4
+FrameX=40
+FrameY=40
+FrameRepeat=3
+Curb=0
+Speed=3
+SmokeFrame=0
+SmokeFrameMin=0
+SmokeSpeed=40
+SmokeSize=4
+FileName=NLR
+ContactAnim=IMPACTMISSILE
+SoundStart=26
+;	"shot09"
+
+;____________________________________________________________________________________
+
+[S-CLOSEATTACK]
+Frames=0
+FrameRepeat=
+FrameX=
+FrameY=
+Curb=
+Speed=0
+SmokeFrame=0
+SmokeFrameMin=
+SmokeSpeed=
+SmokeSize=
+FileName=
+ContactAnim=IMPACT
+SoundStart=18
+;	"shot01"
+
+;____________________________________________________________________________________
+

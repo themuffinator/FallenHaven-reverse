@@ -1,0 +1,140 @@
+[LIGHTDAMAGE]
+; number of frames
+Frames=7
+; speed of animation
+Speed=200
+; base filename of animation frames
+; the actual file will be named FileName(xx).ext
+; 	where FileName is 3 letters long, x is the frame (zero-based, with a leading zero), 
+; 	and ext is 'anm'
+; 	those file must be in CTileImage (compressed) format
+FileName=DPS
+; size of image
+Size_Height=40
+Size_Width=40
+; associate sound (sound to play while animation is running) (not obligatory)
+Sound=3
+
+[SERIOUSDAMAGE]
+Frames=7
+Speed=200
+FileName=DMS
+Size_Height=40
+Size_Width=40
+Sound=3
+
+[CRITICALDAMAGE]
+Frames=7
+Speed=200
+FileName=DGS
+Size_Height=40
+Size_Width=40
+Sound=3
+
+;____________________________________________________________________________________
+
+[SQUADEXPLODESHUM]
+Frames=9
+Speed=60
+FileName=XHS
+Size_Height=88
+Size_Width=104
+Sound=36
+
+[SQUADEXPLODESALI]
+Frames=9
+Speed=60
+FileName=XAS
+Size_Height=88
+Size_Width=120
+Sound=37
+
+[UNITEXPLODES]
+Frames=16
+Speed=55
+FileName=X1S
+Size_Height=150
+Size_Width=170
+Sound=38
+
+;___________________________________________________________________________________
+
+[BUILDINGEXPLODES]
+Frames=18
+Speed=55
+FileName=X1b
+Size_Height=180
+Size_Width=180
+Sound=39
+
+;+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+[IMPACT]
+; number of frames, 4 is a good nb
+Frames=6
+; speed of animation
+Speed=50
+; base filename of animation frames
+; the actual file will be named FileName(xy).ext
+; 	where FileName is 3 letters long, x is the facing, y is the frame, 
+; 	and ext is 'anm'
+; 	those file must be in CTileImage (compressed) format
+FileName=IMP
+; size of image
+Size_Height=32
+Size_Width=32
+; associate sound (sound to play while animation is running) (not obligatory)
+Sound=29
+;	"impact1"
+;____________________________________________________________________________________
+
+[IMPACT2]
+Frames=8
+Speed=50
+FileName=DMP
+Size_Height=32
+Size_Width=32
+Sound=30
+;	"impact2"
+;____________________________________________________________________________________
+
+[IMPACT3]
+Frames=18
+Speed=50
+FileName=MMP
+Size_Height=32
+Size_Width=32
+Sound=31
+;	"impact3"
+;____________________________________________________________________________________
+
+[SHOCK]
+Frames=6
+Speed=50
+FileName=SBI
+Size_Height=32
+Size_Width=32
+Sound=32
+;	"impact4"
+;____________________________________________________________________________________ 
+
+[IMPACTARTILLERY]
+Frames=14
+Speed=50
+FileName=cat
+Size_Height=104
+Size_Width=176
+Sound=33
+;	"impact5"
+;____________________________________________________________________________________
+
+[IMPACTMISSILE]
+Frames=11
+Speed=50
+FileName=impmiss
+Size_Height=96
+Size_Width=112
+Sound=34
+;	"impact6"
+;____________________________________________________________________________________
+

@@ -1,0 +1,248 @@
+;ALIEM.FDS version DEMO
+;ce fichier contient les templates qui determinent le
+;contenu des dropships pour les attaques orbitales et
+;adjacentes
+;------------------------------------------
+;Pour l'attaque Orbitale seulement, le nombre de
+;dropships selon le niveau de difficulte est
+;Easy =   80% 1 Dropship  20% 2 Dropships
+;Average= 33% 1 Dropship  66% 2 Dropships
+;Hard =   14% 1 Dropship  72% 2 Dropships  14% 3 Drops
+;------------------------------------------
+;NOTE: demo n'a pas d'attaque orbitale et seul le niveau easy est utilise
+;------------------------------------------
+
+;DESCRIPTION DU TITRE DES SECTIONS
+;[P1 P2 P3] 
+; P1 DEFINIT LE TYPE D'ATTAQUE
+;    P1 = O POUR ORBITAL, A POUR ADJACENT
+; P2 DEFINIT LE NIVEAU DE DIFFICULTE
+;    P2 = E POUR EASY, M POUR MEDIUM, H POUR HARD
+;
+; P3 = CHIFFRE EXCLUSIF ENTRE 1 ET 24
+;------------------------------------------
+
+;YEAR  1 A 15   DOIT POINTER SUR [P1P2  1 A  6]
+;YEAR 16 A 30   DOIT POINTER SUR [P2P2  7 A 12] 
+;YEAR 31 A 45   DOIT POINTER SUR [P2P2 13 A 18] 
+;YEAR 45 ET +   DOIT POINTER SUR [P2P2 19 A 24] 
+
+[Info]
+NbTemplate=24
+
+********************************************************************************
+;ADJACENT EASY 
+;********************************************************************************
+;1 a 6 = YEAR 1 A 15
+[AE1]
+1=LtTank,Rookie
+2=LtGrav,Rookie
+3=Squad,Rookie
+4=Squad,Rookie
+5=Squad,Rookie
+6=SuperSquad,Rookie
+7=Squad,Rookie
+
+[AE2]
+1=LtTank,Rookie
+2=LtTank,Rookie
+3=SuperSquad,Rookie
+4=SuperSquad,Rookie
+
+[AE3]
+1=LtGrav,Rookie
+2=LtGrav,Marksman
+1=LtGrav,Rookie
+
+[AE4]
+1=LongRange,Rookie
+2=Squad,Rookie
+3=LtTank,Rookie
+4=Squad,Experienced
+5=Squad,Veteran
+6=SuperSquad,Marksman
+7=SuperSquad,Veteran
+
+[AE5]
+1=SuperSquad,Marksman
+2=SuperSquad,Marksman
+3=SuperSquad,Rookie
+4=SuperSquad,Rookie
+5=Squad,Rookie
+6=Squad,Rookie
+7=Squad,Rookie
+8=Squad,Rookie
+
+[AE6]
+1=LtTank,Rookie
+2=LtGrav,Rookie
+3=Squad,Marksman
+4=SuperSquad,Marksman
+5=Squad,Rookie
+6=SuperSquad,Rookie
+
+;7 a 12 = YEAR 16 A 30
+[AE7]
+1=Squad,Rookie
+2=LtTank,Rookie
+3=Squad,Rookie
+4=Squad,Rookie
+5=Squad,Rookie
+6=Squad,Marksman
+7=SuperSquad,Rookie
+8=LongRange,Rookie
+
+[AE8]
+1=LtTank,Rookie
+2=LtTank,Rookie
+3=LtTank,Experienced
+4=LtTank,Experienced
+
+[AE9]
+1=LtGrav,Rookie
+2=LtGrav,Marksman
+3=LtGrav,Rookie
+4=LtTank,Experienced
+
+[AE10]
+1=LongRange,Rookie
+2=LtTank,Rookie
+3=LtTank,Rookie
+4=LtTank,Experienced
+
+[AE11]
+1=LtGrav,Marksman
+2=Squad,Marksman
+3=SuperSquad,Marksman
+4=SuperSquad,Rookie
+5=LtTank,Marksman
+6=SuperSquad,Rookie
+7=SuperSquad,Rookie
+
+[AE12]
+1=SuperSquad,Experienced
+2=SuperSquad,Rookie
+3=SuperSquad,Rookie
+4=SuperSquad,Marksman
+5=SuperSquad,Rookie
+6=SuperSquad,Rookie
+7=SuperSquad,Veteran
+8=SuperSquad,Rookie
+
+;13 a 18 = YEAR 31 A 45
+[AE13]
+1=LtTank,Rookie
+2=LtTank,Rookie
+3=LtTank,Rookie
+4=Squad,Rookie
+5=Squad,Rookie
+6=LtTank,Marksman
+7=SuperSquad,Rookie
+8=Squad,Rookie
+
+[AE14]
+1=Squad,Rookie
+2=LtTank,Rookie
+3=LtTank,Experienced
+4=Squad,Rookie
+5=Squad,Rookie
+6=Squad,Rookie
+7=SuperSquad,Rookie
+8=SuperSquad,Rookie
+
+[AE15]
+1=LtGrav,Rookie
+2=LtGrav,Marksman
+3=LtGrav,Rookie
+4=LtGrav,Experienced
+5=LtGrav,Veteran
+
+[AE16]
+1=LongRange,Rookie
+2=LtTank,Rookie
+3=LtTank,Rookie
+4=LtGrav,Experienced
+5=Squad,Veteran
+6=SuperSquad,Marksman
+7=SuperSquad,Rookie
+8=SuperSquad,Rookie
+
+[AE17]
+1=Squad,Marksman
+2=Squad,Marksman
+3=Squad,Marksman
+4=Squad,Marksman
+5=Squad,Marksman
+6=Squad,Marksman
+7=Squad,Marksman
+8=Squad,Marksman
+
+[AE18]
+1=LongRange,Experienced
+2=LtTank,Rookie
+3=LtGrav,Rookie
+4=LtGrav,Marksman
+5=LongRange,Marksman
+6=LtTank,Experienced
+7=LtTank,Rookie
+
+;19 a 24 = YEAR 46 ET PLUS
+[AE19]
+1=LtTank,Rookie
+2=LtTank,Rookie
+3=LtTank,Rookie
+4=LongRange,Marksman
+5=Squad,Rookie
+6=LtGrav,Marksman
+7=SuperSquad,Rookie
+8=LongRange,Rookie
+
+[AE20]
+1=LongRange,Rookie
+2=LtTank,Rookie
+3=LtTank,Experienced
+4=LtTank,Rookie
+5=SuperSquad,Rookie
+6=LtTank,Rookie
+7=LtGrav,Marksman
+8=LongRange,Marksman
+
+[AE21]
+1=LtGrav,Marksman
+2=LtGrav,Veteran
+3=LtGrav,Marksman
+4=LtTank,Marksman
+5=LtGrav,Veteran
+6=LongRange,Rookie
+7=LongRange,Rookie
+8=LongRange,Marksman
+
+[AE22]
+1=LongRange,Marksman
+2=LtTank,Rookie
+3=LtTank,Rookie
+4=LtGrav,Experienced
+5=LongRange,Experienced
+6=SuperSquad,Marksman
+7=LtGrav,Rookie
+8=LtTank,Rookie
+
+[AE23]
+1=LtGrav,Marksman
+2=LtGrav,Marksman
+3=LtGrav,Marksman
+4=LongRange,Veteran
+5=LtGrav,Marksman
+6=LtGrav,Marksman
+7=LtGrav,Rookie
+8=LongRange,Rookie
+
+[AE24]
+1=LongRange,Marksman
+2=LtTank,Marksman
+3=LtGrav,Marksman
+4=LongRange,Marksman
+5=LongRange,Rookie
+6=LtGrav,Experienced
+7=LtTank,Veteran
+8=LongRange,Marksman
