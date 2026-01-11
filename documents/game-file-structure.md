@@ -54,3 +54,14 @@ Other extensions appear to be configuration, binary asset, or installer-related 
 - The game separates **data definitions** (text-like config files such as `.SUT`, `.UNT`, `.STC`, `.SST`, `.CM`, `.DAT`, `.FDS`) from **binary assets** (images, sounds, animations).
 - Subsystems are grouped by directory name: e.g., `UNITS/` for unit definitions, `STRUCTS/` for buildings, `SOUNDS/` for audio, `RTF/` for in-game text.
 - The `WINDOWS/` folder appears to include required runtime DLLs for Windows 95-era systems; installer tooling is stored at the root and uses InstallShield components.
+
+## Text-like format locations
+These directories contain the configuration-style formats described in `documents/file-types.md`:
+- `AI/`: `.DAT` (AI tuning) and `.FDS` (dropship templates).
+- `ANMS/`: `.DES` animation descriptor files.
+- `CITIES/`: `.CM` city/province layout data.
+- `ROADS/`: `.STC` road definitions.
+- `STRUCTS/`: `.STC` and `.SST` structure definitions.
+- `TERRAINS/`: `.LST` terrain list.
+- `UNITS/`: `.SUT` and `.UNT` unit templates and weapon definitions.
+- `RTF/`, `INTF/`: `.RTF` encyclopedia/help text.
